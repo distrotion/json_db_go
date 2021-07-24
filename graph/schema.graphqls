@@ -1,0 +1,17 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+
+
+type ReturnIcon {
+  icon: String!
+}
+
+input IconName{
+  icon: String!
+}
+
+type Mutation {
+  callIcon(input: IconName!): ReturnIcon!
+}
